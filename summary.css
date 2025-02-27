@@ -28,6 +28,11 @@ body {
     margin-bottom: 50px;
 }
 
+h3 {
+    font-size: 25pt;
+    margin-bottom: 15px;
+}
+
 dt {
     font-weight: bold;
 }
