@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted House Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Audio instruction styling */
+    .audio-instruction {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background: rgba(0,0,0,0.7);
+        padding: 10px 20px;
+        border-radius: 20px;
+        animation: fadeInOut 2s infinite;
+    }
+    
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+    }
+
+    /* Audio checkbox hack styling */
+    .audio-checkbox {
+        display: none;
+    }
+    /* Fullscreen clickable label (the "click anywhere" target) */
+    .audio-control {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 1000;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+    }
+    /* When the checkbox is checked, hide the label */
+    .audio-checkbox:checked ~ .audio-control {
+        display: none;
+    }
+    /* Audio player: hidden by default, then revealed when the checkbox is checked */
+    .audio-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1100;
+        display: none;
+    }
+    .audio-checkbox:checked ~ .audio-player {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="homepage-background">
+        <img src="/images/bb.gif" class="background-image" alt="Haunted House">
+    </div>
+    <div class="overlay"></div>
+    
+    <!-- Atmospheric effects -->
+    <div class="fog-1"></div>
+    <div class="fog-2"></div>
+    <div class="lightning"></div>
+    <div class="blood-overlay"></div>
+    
+    <!-- Main content -->
+    <div class="content">
+        <h1 class="title">The Haunted Manor</h1>
+        <a href="main-hall.html" class="play-btn">ENTER IF YOU DARE</a>
+    </div>
+
+    <!-- Audio elements -->
+    <input type="checkbox" id="audio-toggle" class="audio-checkbox">
+    <label for="audio-toggle" class="audio-control">🔊</label>
+    <audio class="audio-player" loop autoplay controls>
+        <source src="/audio/spooky-ambient.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+</body>
+</html>

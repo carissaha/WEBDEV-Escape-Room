@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Hall</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background-container"></div>
+  
+  <!-- Hidden Checkbox to simulate door state -->
+  <input type="checkbox" id="doorLocked">
+  
+  <!-- Container for Door and Drawer -->
+  <div class="container">
+    <!-- Door Image: Clicking toggles the checkbox -->
+    <label for="doorLocked" class="door">
+      <img src="/images/vent.png" alt="Door">
+    </label>
+    <!-- Drawer Image: Clicking transitions to another page -->
+    <a href="drawer.html" class="drawer">
+      <img src="/images/drawer.png" alt="Drawer">
+    </a>
+  </div>
+  
+  <!-- Dialogue that appears when the door is clicked -->
+  <div class="dialogue-box">
+    <p> You are trapped in the mansion. Find your way out..</p>
+  </div>
+</body>
+</html>

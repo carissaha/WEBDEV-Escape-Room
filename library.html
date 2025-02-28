@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-screen Background -->
+    <div class="library-background"></div>
+    
+    <!-- Hidden Checkbox for Painting Swing -->
+    <input type="checkbox" id="paintingToggle" class="library-checkbox">
+    
+    <!-- Hidden Checkbox for Bookshelf Toggle (Switch Activation) -->
+    <input type="checkbox" id="bookshelfToggle" class="library-checkbox">
+    
+    <!-- Painting Section -->
+    <div class="library-painting">
+        <!-- Painting: Clicking swings it open -->
+        <label for="paintingToggle" class="painting-frame">
+            <img src="/images/painting.png" alt="Painting">
+        </label>
+        <!-- Switch: Revealed behind the painting, clickable to toggle bookshelf -->
+        <div class="painting-switch-container">
+            <label for="bookshelfToggle" class="painting-switch">
+                <img src="/images/switch.png" alt="Switch Off">
+            </label>
+        </div>
+    </div>
+    
+    <!-- Decorative Bookshelf (Under Painting) -->
+    <div class="library-decor-bookshelf">
+        <img src="/images/bookshelf.png" alt="Decorative Bookshelf">
+    </div>
+    
+    <!-- Interactive Bookshelf and Passage Section -->
+    <div class="library-bookshelf-container">
+        <!-- Bookshelf: Slides when toggled -->
+        <div class="library-bookshelf">
+            <img src="/images/bookshelf.png" alt="Bookshelf">
+        </div>
+        <!-- Hidden Passage: Revealed and clickable when bookshelf slides -->
+        <a href="secret-passage.html" class="library-passage">
+            <img src="/images/hiddenpsg.png" alt="Hidden Passage">
+        </a>
+    </div>
+    
+    <!-- Initial Dialogue -->
+    <div class="library-dialog initial-dialog">
+        Now how do I get out of here…
+    </div>
+    
+    <!-- Dialogue for Painting -->
+    <div class="library-dialog painting-dialog">
+        A hidden switch!
+    </div>
+    
+    <!-- Dialogue for Bookshelf -->
+    <div class="library-dialog bookshelf-dialog">
+        A secret passage opens!
+    </div>
+    
+    <!-- Back Button -->
+    <a href="dooropen.html" class="library-back">← Back</a>
+</body>
+</html>

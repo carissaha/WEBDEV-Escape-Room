@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Door Open</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Full-screen Background -->
+  <div class="dooropen-background"></div>
+  
+  <!-- Hidden checkbox for door toggling -->
+  <input type="checkbox" id="dooropenToggle">
+  
+  <!-- Door Section (positioned independently) -->
+  <div class="dooropen-door">
+    <!-- Closed Door: Clicking toggles the checkbox -->
+    <label for="dooropenToggle" class="dooropen-closed">
+      <img src="/images/vent.png" alt="Closed Door">
+    </label>
+    <!-- Open Door: Visible only when checkbox is checked; clicking it goes to library -->
+    <a href="library.html" class="dooropen-open">
+      <img src="/images/openvent.png" alt="Open Door">
+    </a>
+  </div>
+  
+  <!-- Drawer Image (positioned independently) -->
+  <a href="drawer.html" class="dooropen-drawer">
+    <img src="/images/drawer.png" alt="Drawer">
+  </a>
+  
+  <!-- Dialogue that appears after door is unlocked -->
+  <div class="dooropen-dialog">
+    Vent unlocked!!
+  </div>
+</body>
+</html>

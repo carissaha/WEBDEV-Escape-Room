@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Hall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-screen Background -->
+    <div class="scary-hall-background"></div>
+    
+    <!-- Spider Animations -->
+    <div class="spider-container">
+        <img src="/images/spider.gif" alt="Spider 1" class="spider spider-1">
+        <img src="/images/spider.gif" alt="Spider 2" class="spider spider-2">
+        <img src="/images/spider.gif" alt="Spider 3" class="spider spider-3">
+    </div>
+    
+    <!-- Flickering Light Effect -->
+    <div class="flicker-light"></div>
+    
+    <!-- Clickable Image (Appears After Background Switch, Transitions to Trapped Person Room) -->
+    <a href="trapped-person-room.html" class="scary-hall-door">
+        <img src="/images/reddoor .png" alt="Scary Door">
+    </a>
+    
+    <!-- Audio elements -->
+    <input type="checkbox" id="audio-toggle" class="audio-checkbox">
+    <label for="audio-toggle" class="audio-control">🔊</label>
+    <audio class="audio-player" loop autoplay controls>
+        <source src="/audio/gathering-darkness-kevin-macleod-main-version-8459-04-22.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Dialogue -->
+    <div class="scary-hall-dialog">
+        The shadows scream for your soul… RUNNN
+    </div>
+    
+    <!-- Back Button (Returns to Three Door Room) -->
+    <a href="threedoorroom.html" class="scary-hall-back">← Back</a>
+</body>
+</html>
