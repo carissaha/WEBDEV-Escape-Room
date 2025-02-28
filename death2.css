@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(218, 218, 218);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.death-container {
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInButton 1s ease-in forwards;
+    animation-delay: 2s;
+    z-index: 1;
+}
+h1 {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    font-size: 20pt;
+    color: #ffffff;
+}
+.try-again {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.try-again:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+.oldman {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    z-index: 0;
+    opacity: 1;
+    animation: flashFade 1.5s ease-out forwards;
+}
+@keyframes flashFade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    30% { opacity: 0; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeToBlack {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInButton {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fullscreen-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0;
+    animation: fadeToBlack 2s ease-in forwards;
+    pointer-events: none;
+}

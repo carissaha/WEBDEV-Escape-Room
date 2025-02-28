@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url('images/trappedroom.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.person {
+    position: absolute;
+    top: 35vh;
+    right: 23vw;
+    width: 15vw;
+}
+
+.person-text {
+    position: absolute;
+    top: 25vh;
+    right: 25vw;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(177, 172, 159);
+    box-shadow: 0 0 10px rgb(168, 83, 83);
+}
+
+.choices {
+    display: flex;
+    position: fixed;
+    bottom: 2vh;
+    left: 35vw;
+    gap: 100px;
+}
+.choice1, .choice2 {
+    padding: 10px 50px;
+    font-size: 24pt;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+.choice1:hover, .choice2:hover {
+    background-color: #ccc;
+}

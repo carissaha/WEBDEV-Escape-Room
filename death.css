@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-image: url('images/death.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.death-container {
+    position: absolute;
+    top: 25vh;
+    left: 35vw;
+    text-align: center;
+}
+h1 {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+.try-again {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.try-again:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+.ghost {
+    position: absolute;
+    bottom: 1vh;
+    left: 40vw;
+    width: 20vw;
+    z-index: 0;
+    opacity: 0.5;
+    animation: moveGhost 12s ease-in-out infinite;
+}
+@keyframes moveGhost {
+    0% {
+        left: 20vw;
+        transform: scaleX(-1);
+    }
+    50% {
+        left: 70vw;
+    }
+    100% {
+        left: 20vw;
+    }
+}
