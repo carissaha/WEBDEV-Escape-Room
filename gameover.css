@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url("gameover-background.jpg") no-repeat center center fixed ;
+    background-size: cover;
+    font-family:  'Courier New', Courier, monospace;
+    color: red;
+    overflow: hidden;
+    position: relative;
+
+    flex-direction: column;
+    
+}
+h1{
+    font-family: monospace;
+    font-size: 1000%;
+
+}
+
+
+
+.start-over{
+    color: red;
+    font-size: 300%;
+    text-decoration: none ;
+
+}

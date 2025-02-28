@@ -1,0 +1,52 @@
+body {
+    font-family: monospace;
+    min-height: 100vh;
+    background: url(final_background.jpg) no-repeat;
+    background-size: cover;
+    align-content: center;
+
+
+}
+
+
+
+
+
+.type {
+    
+
+    font-family: monospace;
+    font-size: 20px;
+    color:#0000;
+    text-align: justify;
+    background:
+      linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+      linear-gradient(#ffffff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      b .2s infinite steps(1),   
+      t calc(var(--n)*.03s) steps(var(--n)) forwards;
+
+  }
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+}
+
+/* source: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
+
+.start-over{
+    position: absolute;
+    color: red;
+    font-size: 200%;
+    text-decoration: none ;    
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+
+}
