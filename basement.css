@@ -56,7 +56,6 @@ body {
 #toggle:checked ~ .bones {
     opacity: 1;
 }
-
 #toggle:checked ~ .dog {
     transform: translateX(-240px);
 }
@@ -74,7 +73,7 @@ body {
 }
 #toggle:checked ~ .exit-link {
     pointer-events: auto;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #toggle:checked ~ label {
@@ -96,27 +95,29 @@ body {
 }
 
 .text1 {
-    background-color: #0000006f;
+    background-color: #00000090;
     color: rgb(231, 231, 231);
     font-size: 16pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     position: fixed;
     bottom: 0px;
     right: 0px;
+    font-family: monospace;
 }
 
 .text2 {
-    background-color: #0000006f;
+    background-color: #00000090;
     color: rgb(231, 231, 231);
     font-size: 16pt;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     position: fixed;
     bottom: 0px;
     right: 0px;
+    font-family: monospace;
     opacity: 0;
 }
 

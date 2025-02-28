@@ -15,7 +15,7 @@ body {
 .death-container {
     position: absolute;
     top: 25vh;
-    left: 15vw;
+    left: 28vw;
     text-align: center;
     opacity: 0;
     animation: fadeInButton 1s ease-in forwards;
