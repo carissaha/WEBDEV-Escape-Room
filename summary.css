@@ -4,7 +4,7 @@
 
 body {
     font-family: sans-serif;
-    background: url('summary.png') no-repeat center center fixed;
+    background: url('images/summary.png') no-repeat center center fixed;
     background-size: cover;
     backdrop-filter: blur(5px);
     margin: 0;
@@ -38,4 +38,16 @@ dt {
 }
 dd {
     margin-bottom: 10px;
+}
+
+.backtohome {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.backtohome:hover {
+    background-color: rgb(215, 215, 215);
 }
