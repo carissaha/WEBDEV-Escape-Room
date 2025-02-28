@@ -1,7 +1,7 @@
 body {
     font-family: monospace;
     min-height: 100vh;
-    background: url(images/final_background.jpg) no-repeat;
+    background: url(images/woods.jpg) no-repeat;
     background-size: cover;
     align-content: center;
 
@@ -56,4 +56,3 @@ body {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
-

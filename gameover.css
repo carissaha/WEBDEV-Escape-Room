@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url("gameover-background.jpg") no-repeat center center fixed ;
+    background: url("images/gameover-background.jpg") no-repeat center center fixed ;
     background-size: cover;
     font-family:  'Courier New', Courier, monospace;
     color: red;

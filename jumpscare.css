@@ -32,32 +32,38 @@ p{
 
 /* jumpscare in jumpscare2.html*/
 .jumpscare1-image {
-    max-width: 100vw;
+    max-width: 100vw; 
     max-height: 100vh;
     object-fit: cover;
-    animation: ZoomIn1 .25s ease-out, shake 0.5s 1s infinite alternate; /* Combine zoom and shake animation */
+    animation: ZoomIn2 2s ease-out
 }
-
-@keyframes ZoomIn1 {
+@keyframes ZoomIn2  {
     0% {
         transform: scale(0.5);
     }
     100% {
-        transform: scale(1.2); /* Zoom into the screen */
+        transform: scale(2.5); /* Zoom into the screen */
     }
 }
 
 
-@keyframes shake {
-    0% {
-        transform: scale(1.2) rotate(-10deg) translateX(-10px) translateY(0);
-    }
-    50% {
-        transform: scale(1.2) rotate(10deg) translateX(10px) translateY(0);
-    }
-    100% {
-        transform: scale(1.2) rotate(-10deg) translateX(-10px) translateY(0);
-    }
+
+.next-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+.next-button:hover {
+    background-color: darkred; 
 }
 
 
