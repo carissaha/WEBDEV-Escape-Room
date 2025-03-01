@@ -48,5 +48,5 @@ body {
     transition: background-color 0.3s;
 }
 .choice1:hover, .choice2:hover {
-    background-color: #ccc;
+    background-color: red;
 }

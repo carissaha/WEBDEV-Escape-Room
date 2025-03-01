@@ -40,7 +40,7 @@ body {
 
 /* source: https://dev.to/afif/a-multi-line-css-only-typewriter-effect-3op3 */
 
-.start-over{
+.next-btn{
     position: absolute;
     color: red;
     font-size: 300%;
@@ -51,7 +51,7 @@ body {
 
 }
 
-.start-over:hover {
+.next-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);

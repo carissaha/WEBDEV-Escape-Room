@@ -52,4 +52,17 @@ body {
 }
 
 
-
+.dialogue{
+    font-family: monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000090;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    font-size: 16pt;
+    color: rgb(231, 231, 231);
+ }
+ 

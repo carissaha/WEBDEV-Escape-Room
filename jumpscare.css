@@ -1,4 +1,5 @@
 body {
+    font-family: monospace;
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -50,22 +51,22 @@ p{
 
 .next-button {
     position: absolute;
-    bottom: 20px;
+    color: red;
+    font-size: 300%;
+    text-decoration: none ;   
+    top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    z-index: 2;
 
-}
+ }
+ 
 
 .next-button:hover {
-    background-color: darkred; 
-}
-
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+   }
+   
 
 /* jumpscare in jumpscare2.html*/
 .jumpscare2-image {
@@ -85,20 +86,19 @@ p{
 
 
 
-.next-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 5px;
+
+
+
+.dialogue{
+    font-family: monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000090;
+    padding: 10px;
+    text-align: center;
     z-index: 2;
-
-}
-
-.next-button:hover {
-    background-color: darkred; 
-}
+    font-size: 16pt;
+    color: rgb(231, 231, 231);
+ }
